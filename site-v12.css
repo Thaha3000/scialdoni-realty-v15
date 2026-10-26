@@ -1,0 +1,26 @@
+/* V12: preserve approved design; repair actual property imagery and add brokerage disclosure. */
+/* The portrait farmhouse photograph now uses a real image element instead of a CSS-only background. */
+.listing .photo.v12-photo{position:relative;overflow:hidden;background:#e9e5dc}
+.listing .photo.v12-photo>img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 56%}
+.listing .photo.v12-photo>.tag{z-index:1}
+/* Consistent full-size renderings for designs 01–05, plus clickable true photo thumbnails. */
+#work .work-home>img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center;background:#eae8e0}
+#work .work-trio img{display:block;width:100%;height:112px;object-fit:contain;background:#f3f1eb;margin-bottom:7px}
+#work .work-trio a:first-child img{object-fit:cover;background:#e9e5db}
+#work .work-trio a:hover img{outline:2px solid #b99457;outline-offset:-2px}
+/* Ed's preference: fully intact project information beneath the site plan. */
+#work .v11-brookview-banner.v12-after-plan{margin:26px auto 20px;max-width:none}
+/* Contact details on each individual page with quiet, legible footer formatting. */
+.v12-brokerage-info{border-top:1px solid #ffffff30;max-width:960px;margin:32px auto 8px;padding:23px 12px 0;text-align:center;color:#fff;font-family:'DM Sans',Arial,sans-serif;line-height:1.75}
+.v12-brokerage-info strong{font-size:15px;color:#fff;letter-spacing:.03em}
+.v12-brokerage-info address{font-size:13px;color:#d3d8e3;font-style:normal;line-height:1.8}
+.v12-brokerage-links{display:flex;align-items:center;justify-content:center;gap:11px;flex-wrap:wrap;font-size:13px}
+.v12-brokerage-links a{color:#e6cb93;text-decoration:none}
+.v12-brokerage-links a:hover{text-decoration:underline}
+.v12-office-contact{border-left:3px solid #d6b56c;background:#f7f5f0;padding:17px 22px;margin:24px 0 0}
+.v12-office-contact strong{font-size:17px;color:#172037}
+.v12-office-contact address{font-style:normal;color:#5c6678;font-size:14px;line-height:1.7;margin:8px 0}
+.v12-office-contact p{font-size:14px;margin:8px 0 0;line-height:1.8}
+.v12-office-contact a{color:#213964;text-decoration:underline}
+.v12-booking-note{font-size:13px;color:#6a7381;line-height:1.6}
+@media(max-width:750px){#work .work-home>img{aspect-ratio:16/10}#work .work-trio img{height:90px}.v12-brokerage-links{gap:7px}}

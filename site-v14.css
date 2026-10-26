@@ -1,0 +1,32 @@
+/* Scialdoni Realty V14: property search only. All existing website styles are preserved. */
+:root{--v14-navy:#182648;--v14-gold:#d4b16e;--v14-cream:#f8f6f1}
+.v14-discovery-label{display:flex;align-items:center;gap:9px;font:700 11px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:.20em;color:#97733d}
+.v14-live-dot{display:inline-block;width:8px;height:8px;flex:none;background:#6b9469;border-radius:50%;box-shadow:0 0 0 4px #6b94691a}
+/* A clear pathway to the real, editable MLS search replaces V13's read-only faux input. */
+#explore.v14-search-discovery{width:min(1220px,92%);margin:-18px auto 0;position:relative;z-index:2;border:1px solid #e9e1d4;background:#fff;box-shadow:0 20px 55px #17203716;display:flex;gap:32px;align-items:center;justify-content:space-between;padding:36px 44px}
+#explore.v14-search-discovery .v14-discovery-copy{min-width:0}
+#explore.v14-search-discovery h2{font:500 clamp(29px,3.3vw,42px)/1.18 'Playfair Display',Georgia,serif;color:var(--v14-navy);margin:11px 0 7px}
+#explore.v14-search-discovery p{font-size:14px;line-height:1.7;color:#697183;margin:0;max-width:590px}
+#explore.v14-search-discovery .v14-discovery-actions{display:flex;flex-direction:column;align-items:stretch;gap:13px;flex-shrink:0}
+#explore.v14-search-discovery .v14-discovery-actions .btn{white-space:nowrap;min-width:238px;justify-content:center;text-align:center;display:inline-flex;align-items:center;gap:12px;text-decoration:none}
+#explore.v14-search-discovery .v14-valuation-link{color:#263557;font-size:12px;line-height:1.4;text-align:center;letter-spacing:.025em;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+#explore.v14-search-discovery a:focus-visible{outline:3px solid #a58349;outline-offset:4px}
+/* Embedded IDX search page */
+.search-landing .v14-search-title{background:var(--v14-cream);padding:66px 0 56px}
+.search-landing .v14-search-title h1{margin:17px 0 17px;color:var(--v14-navy)}
+.search-landing .v14-search-title .lead{margin:0;max-width:760px;color:#636d7d;line-height:1.65}
+.search-landing .v14-search-content{background:#fff;padding:58px 0 80px}
+.search-landing .v14-idx-container{width:min(1400px,94%);margin:0 auto}
+.search-landing .v14-search-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:28px}
+.search-landing .v14-search-intro h2{font:500 clamp(27px,3.2vw,40px)/1.17 'Playfair Display',Georgia,serif;color:var(--v14-navy);margin:11px 0 7px}
+.search-landing .v14-search-intro p{margin:0;color:#697183;font-size:14px;line-height:1.6}
+.search-landing .v14-open-external{border:1px solid #c7ae7f;background:#fff;color:var(--v14-navy);display:inline-flex;justify-content:center;align-items:center;padding:15px 19px;text-align:center;white-space:nowrap;font:700 11px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:.08em;transition:background .2s,color .2s}
+.search-landing .v14-open-external:hover{background:var(--v14-navy);color:#fff}
+.search-landing .v14-idx-frame-wrap{border:1px solid #dcd7cc;box-shadow:0 16px 38px #17203710;background:#f4f3f0;min-height:1370px;overflow:hidden}
+.search-landing .v14-idx-frame{display:block;width:100%;height:1550px;border:0;background:#f4f3f0}
+.search-landing .v14-idx-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 32px;padding:17px 4px;border-bottom:1px solid #e6e0d6}
+.search-landing .v14-idx-bottom p{margin:0;color:#687080;font-size:12px}
+.search-landing .v14-idx-bottom a{font-weight:700;color:var(--v14-navy);text-decoration:underline;text-underline-offset:3px}
+.search-landing .v14-search-content a:focus-visible{outline:3px solid #bd995a;outline-offset:3px}
+@media(max-width:900px){#explore.v14-search-discovery{margin:0 auto;flex-direction:column;align-items:stretch;padding:28px 25px;gap:22px}#explore.v14-search-discovery .v14-discovery-actions{align-items:flex-start}#explore.v14-search-discovery .v14-valuation-link{text-align:left}.search-landing .v14-search-intro{align-items:flex-start;flex-direction:column;gap:22px}}
+@media(max-width:600px){#explore.v14-search-discovery{width:100%;padding:26px 6%;border-left:0;border-right:0}#explore.v14-search-discovery .v14-discovery-actions,#explore.v14-search-discovery .v14-discovery-actions .btn{width:100%}#explore.v14-search-discovery .v14-valuation-link{text-align:center}.search-landing .v14-search-title{padding:49px 0 43px}.search-landing .v14-search-content{padding:37px 0 60px}.search-landing .v14-idx-container{width:96%}.search-landing .v14-search-intro{padding:0 6px}.search-landing .v14-open-external{white-space:normal}.search-landing .v14-idx-frame{height:1550px}}

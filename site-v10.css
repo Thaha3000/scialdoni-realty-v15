@@ -1,0 +1,103 @@
+
+/* Scialdoni Realty v9: responsive navigation, original-size photography, editorial panels */
+:root{--v9-navy:#10183e;--v9-gold:#b99457;--v9-line:#e6e0d6}
+html{scroll-padding-top:105px}
+.location-collections{background:#f8f6f2}
+.location-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:38px;align-items:stretch}
+.multifamily-feature{position:relative;min-height:445px;display:block;overflow:hidden;background:#e9e5dd;box-shadow:0 16px 42px #10183019}
+.multifamily-feature img{width:100%;height:100%;min-height:445px;position:absolute;inset:0;object-fit:cover;object-position:center 45%;transition:transform .45s ease}
+.multifamily-feature:hover img{transform:scale(1.025)}
+.multifamily-feature::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(5,13,43,.85))}
+.multifamily-copy{position:absolute;bottom:0;left:0;right:0;padding:34px 38px;color:white;z-index:1}
+.multifamily-copy .mini-eyebrow{font-size:11px;letter-spacing:.19em;color:#ead6ab;font-weight:700}
+.multifamily-copy h3{font:500 clamp(28px,3vw,39px)/1.12 'Playfair Display',Georgia,serif;color:white;margin:12px 0}
+.multifamily-copy p{font-size:14px;line-height:1.6;max-width:390px;color:#f3f1ea;margin-bottom:0}
+.communities-panel{background:#fff;border:1px solid var(--v9-line);padding:39px 37px;display:flex;flex-direction:column;justify-content:center}
+.communities-panel h3{font:500 33px/1.2 'Playfair Display',Georgia,serif;color:#10183e;margin:8px 0 14px}
+.communities-panel>p{color:#626978;line-height:1.8;font-size:14px;margin:0 0 22px}
+.city-links{display:flex;flex-wrap:wrap;gap:9px}
+.city-links a{display:inline-flex;border:1px solid #e2d9c7;padding:10px 14px;font-weight:700;font-size:12px;letter-spacing:.015em;background:#fbfaf8;color:#263050;transition:background .2s,border-color .2s}
+.city-links a:hover,.city-links a:focus-visible{background:#f0e6d4;border-color:#c2a36c}
+.community-subnote{border-top:1px solid #eee8df;margin-top:26px;padding-top:17px;font-size:12px!important;color:#747987}
+/* External photos fill their frames; avoid contain/letterboxing from earlier builds */
+.listing .photo{background-size:cover!important;background-position:center!important;background-color:#e9e5dc}
+.category{background-size:cover!important;background-repeat:no-repeat;background-position:center!important}
+.split img,.section-grid img,.intro img{object-fit:cover}
+#buyers .split img{height:475px;object-fit:cover;object-position:center 53%}
+.coastal-category{background-position:center 54%!important}
+.house-vertical{object-position:50% 56%!important}
+.area-region{border-top:3px solid #b99457}
+.area-region h3{line-height:1.2}
+.area-region p{overflow-wrap:break-word}
+.sell-nav{position:relative;display:flex;align-items:center;gap:1px}
+.sell-main-link{white-space:nowrap}
+.sell-toggle{font:700 12px/1 inherit;color:inherit;background:none;border:0;cursor:pointer;padding:9px 5px;line-height:1}
+.sell-menu{display:none;position:absolute;top:calc(100% + 20px);left:-24px;width:290px;background:white;box-shadow:0 14px 34px #0b153226;border:1px solid #e9e2d6;padding:9px;z-index:35}
+.sell-nav:hover .sell-menu,.sell-nav:focus-within .sell-menu,.sell-nav.open .sell-menu{display:block}
+.sell-menu a{display:block!important;padding:14px 15px!important;color:#162142!important;font-size:12px!important;font-weight:700!important;letter-spacing:0!important;line-height:1.5}
+.sell-menu a:hover,.sell-menu a:focus-visible{background:#f5f0e7;color:#81622f!important}
+.navlinks .sell-nav{font-size:12px;font-weight:700}
+.navlinks .sell-menu{top:100%}
+.navlinks .sell-menu a{line-height:1.5}
+.sell-link-card{display:block;padding:30px;border:1px solid #e6dfd4;background:#fff}
+.sell-link-card strong{font-family:'Playfair Display',Georgia,serif;font-size:25px;font-weight:500;color:#172037;display:block;margin:12px 0}
+.sell-link-card p{font-size:14px;line-height:1.7}
+.sell-link-card:hover{box-shadow:0 14px 32px #111b3420;transform:translateY(-2px)}
+.sell-link-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;margin-top:25px}
+.sell-link-card img{width:100%;height:250px;object-fit:cover;display:block}
+.sell-link-card .link-arrow{font-size:12px;font-weight:700;letter-spacing:.08em;color:#80612c}
+.staging-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.staging-gallery article{background:white;border:1px solid #e7e1d8;overflow:hidden}
+.staging-gallery img{width:100%;height:295px;display:block;object-fit:cover;object-position:center}
+.staging-gallery article>div{padding:25px}
+.staging-gallery h3{font:500 25px 'Playfair Display',Georgia,serif;margin:0 0 10px}
+.staging-gallery p{font-size:14px;line-height:1.8;color:#606a79}
+.staging-gallery .photo-vertical{object-position:center 65%}
+.review-stage{position:relative}
+.review-slide{animation:reviewFade .2s ease}
+@keyframes reviewFade{from{opacity:.65}to{opacity:1}}
+.review-slide small{display:block;margin-top:22px;letter-spacing:.03em}
+.review-controls{margin-top:22px}
+.review-controls>button:hover{background:#10183e;color:white;border-color:#10183e}
+.review-dots button{cursor:pointer}
+.profile-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-size:12px;font-weight:700;color:#10183e;letter-spacing:.06em}
+.agent .detail a.profile-link:hover{text-decoration:underline;color:#a17a31}
+.contact-phone strong{color:#172037}
+.search-landing .search-control{background:white;border:1px solid #e6e0d6;padding:25px}
+.search-landing .search-control select{width:100%;padding:13px 14px;margin-top:8px;border:1px solid #e1ded7;background:white}
+.search-landing .search-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.search-landing .search-control label{font-size:12px;font-weight:700;color:#172037}
+.search-landing .status-panel{margin-top:29px;padding:32px;background:#f4f1e9;border-left:4px solid #b99457}
+.search-landing .status-panel h2{font-size:30px;margin-top:0}
+.search-landing .status-panel p{color:#626978;line-height:1.8}
+.search-landing .search-list{margin-top:24px;padding:25px;background:white;border:1px solid #eee8df}
+.search-landing .search-list h3{font-size:25px;margin-top:0}
+.search-landing .city-pills{display:flex;gap:8px;flex-wrap:wrap}
+.search-landing .city-pills span{background:#f6f3ed;border:1px solid #e8dfcd;padding:8px 12px;font-size:12px;color:#35405d}
+.search-landing .search-title{padding:75px 0 40px}
+/* small screen navigation */
+@media(max-width:1080px){.links{gap:16px}.navlinks{gap:14px}}
+@media(max-width:850px){.location-layout{grid-template-columns:1fr}.multifamily-feature,.multifamily-feature img{min-height:370px}.navlinks .sell-nav{align-self:stretch}.navlinks .sell-menu{position:static;box-shadow:none;width:100%;border:0;border-left:2px solid #b99457}.sell-menu{top:100%}}
+@media(max-width:850px){.links .sell-nav{width:100%;justify-content:center}.links .sell-menu{position:static;top:auto;left:auto;width:100%;box-shadow:none;border:0;border-top:1px solid #eee;margin-top:7px}.links .sell-nav.open{flex-wrap:wrap}.navlinks{gap:12px}}
+@media(max-width:700px){.staging-gallery,.sell-link-grid,.search-landing .search-grid{grid-template-columns:1fr}.staging-gallery img{height:250px}}
+@media(max-width:550px){.communities-panel{padding:26px}.multifamily-copy{padding:27px}.location-collections .section-head{margin-bottom:28px}#buyers .split img{height:340px}}
+
+/* Agent profile full-site navigation */
+.profile a[href^="tel:"]{font-weight:700;color:#81622f}
+@media(max-width:850px){.navlinks .sell-nav{display:flex;flex-wrap:wrap;align-items:center}.navlinks .sell-menu{width:100%}}
+@media(max-width:900px){.area-list{grid-template-columns:1fr!important}}
+
+.v9-footer-brand{display:flex;justify-content:center;align-items:center;gap:12px;color:#fff;margin:0 auto 22px}.v9-footer-mark{width:46px;height:46px;border:1px solid #c2a476;display:grid;place-items:center;font:24px 'Playfair Display',Georgia,serif}.v9-footer-brand b{display:block;font:25px 'Playfair Display',Georgia,serif;line-height:1.1}.v9-footer-brand small{display:block;letter-spacing:.34em;font-size:9px}.footer .v9-footer-service{max-width:680px;margin:12px auto 18px;color:#ccd0dc;font-size:13px;line-height:1.75}
+
+.review-slide small a{color:#84652e;text-decoration:underline;text-underline-offset:3px}
+.sell-toggle{font-family:inherit;font-size:12px;font-weight:700}
+
+/* Version 10: approved source photography and usable consultation call-to-actions. */
+#explore .tab:focus-visible,#explore .btn:focus-visible{outline:3px solid #d6b56c;outline-offset:2px}
+#explore .search-body #search-action-btn{min-width:190px}
+.v10-call{display:inline-flex;margin:12px 0 8px;line-height:1.5;text-decoration:none!important}
+.v10-contact-link{display:block;text-decoration:underline;margin-top:15px;color:#203663;font-weight:700;font-size:14px}
+.v10-property{background:#f8f5ef;padding:14px;font-size:14px;overflow-wrap:anywhere}
+/* Keep the house left and ocean to the right in the original user photo visible on the buyer page. */
+.intro-grid img.coastal-ocean-photo{object-fit:cover;object-position:center center}
+@media(max-width:550px){#explore .search-body #search-action-btn{width:100%}}

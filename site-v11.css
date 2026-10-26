@@ -1,0 +1,68 @@
+/* Scialdoni Realty V11 — Ed's portfolio and preparation updates, editorial replacement panels. */
+html{scroll-padding-top:110px}
+.v11-editorial-photo{background:linear-gradient(155deg,#132147,#0a1032 84%);color:#fff;min-height:410px;height:420px;border-radius:4px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(27px,4.5vw,58px);position:relative;overflow:hidden;isolation:isolate}
+.intro-grid>.v11-editorial-photo{height:520px}
+.v11-editorial-photo:before{content:"";position:absolute;z-index:-1;inset:-100px -40px -160px 40%;transform:rotate(-28deg);border:1px solid #e2bb7655;border-radius:50%}
+.v11-editorial-kicker{font-size:11px;letter-spacing:.24em;font-weight:700;color:#d7b978;text-transform:uppercase}
+.v11-editorial-rule{width:65px;height:2px;background:#d7b978;margin:30px 0 20px}
+.v11-editorial-photo h3{font:500 clamp(28px,3.2vw,44px)/1.18 'Playfair Display',Georgia,serif;color:#fff;margin:0 0 16px;max-width:440px}
+.v11-editorial-photo p{color:#e2e4ea;font-size:15px;line-height:1.85;max-width:380px;margin:0}
+.v11-editorial-mark{position:absolute;right:32px;bottom:22px;font:40px 'Playfair Display',Georgia,serif;color:#e4bc7766}
+.staging-gallery .v11-editorial-photo{height:295px;min-height:295px;border-radius:0;padding:30px}
+.staging-gallery .v11-editorial-photo h3{font-size:30px}
+.staging-gallery .v11-editorial-photo p{font-size:12px;line-height:1.6}
+.staging-gallery .v11-editorial-rule{margin:17px 0 12px}
+.v11-principle{background:#0d1637;color:#fff;text-align:center;padding:75px 0}
+.v11-principle h2{max-width:930px;margin:15px auto 15px;color:white}
+.v11-principle p{max-width:790px;color:#e0e3ea;margin:0 auto 25px}
+.v11-principle .cta.light{border:1px solid #d4ae69;background:#d4ae69;color:#101838}
+.v11-balanced{text-transform:uppercase;letter-spacing:.2em;color:#9b763b!important;font-weight:700;font-size:13px!important;margin-bottom:4px!important}
+.v11-pre-market{background:#f8f6f1}
+.v11-process-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:30px}
+.v11-process-card{padding:32px;background:white;border:1px solid #e6ddce;box-shadow:0 7px 22px #10183009;border-top:3px solid #b99457}
+.v11-process-card>span{font-size:11px;letter-spacing:.14em;color:#a77d42;font-weight:700}
+.v11-process-card h3{font:500 28px/1.23 'Playfair Display',Georgia,serif;margin:13px 0 15px;color:#172037}
+.v11-process-card p,.v11-process-card li{font-size:14px;line-height:1.75;color:#5e6676}
+.v11-process-card ul{padding-left:24px;margin:10px 0}
+.v11-process-card li{padding:1px 0}
+.v11-process-goal{margin-top:25px;padding:36px 48px;background:#142044;color:white}
+.v11-process-goal h3{color:#fff;font:500 32px 'Playfair Display',Georgia,serif;margin:7px 0}
+.v11-process-goal p{color:#e2e5eb;font-size:15px;margin:12px 0}
+.v11-process-tagline{text-align:center;padding:70px 22px 12px}
+.v11-process-tagline h2{margin:0 auto 12px;max-width:960px}
+.v11-process-tagline p{max-width:790px;margin:0 auto;color:#586373}
+.v11-brookview-banner{background:#0a1030;border-radius:5px;color:#fff;max-width:1180px;margin:0 auto 36px;padding:35px 42px 24px;box-shadow:0 16px 37px #161c3540}
+.v11-brookview-kicker{font-size:11px;font-weight:700;letter-spacing:.23em;color:#d9b575}
+.v11-brookview-head{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:8px 0 27px}
+.v11-brookview-head h3{font:500 34px 'Playfair Display',Georgia,serif;color:#fff;margin:0}
+.v11-brookview-action{border:1px solid #d8ba7d;background:#d8ba7d;color:#101735!important;font-weight:700;letter-spacing:.03em;font-size:12px;padding:14px 18px}
+.v11-brookview-action:hover{background:white;border-color:white}
+.v11-brookview-specs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid #ffffff36;border-bottom:1px solid #ffffff36}
+.v11-brookview-specs>div{padding:19px 12px;border-right:1px solid #ffffff30}
+.v11-brookview-specs>div:first-child{padding-left:0}
+.v11-brookview-specs>div:last-child{border-right:0}
+.v11-brookview-specs b{display:block;color:#fff;font-size:clamp(19px,2vw,25px);font-weight:600;margin-bottom:8px}
+.v11-brookview-specs span{font-size:10px;color:#d6c39e;letter-spacing:.11em;font-weight:600}
+.v11-brookview-disclaimer{margin:18px 0 0!important;font-size:11px!important;line-height:1.8;color:#bcc3d8!important}
+.v11-work-intro{max-width:760px!important;margin:13px auto 0!important;font-size:14px!important}
+.v11-render-link{display:grid;place-items:center;background:#0c1539;color:#ecd29e;min-height:112px;padding:12px;text-align:center;font-size:12px;font-weight:700;letter-spacing:.04em}
+.v11-concept-display{min-height:295px;background:linear-gradient(145deg,#121f44,#26395b);display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;padding:30px;color:white}
+.v11-concept-display strong{font:500 53px 'Playfair Display',Georgia,serif;color:white;margin:12px 0}
+.v11-concept-display span{font-size:12px;letter-spacing:.04em;color:#e4e4ea}
+.review-feedback-label{font-size:11px;letter-spacing:.16em;color:#aa8548;font-weight:700;padding:16px 0 7px}
+.review-slide .review-feedback-label+h3{margin-top:15px}
+.v11-bio-copy{min-width:0;max-width:790px}
+.profile .v11-bio-copy h1{font:clamp(42px,4vw,60px)/1.12 'Playfair Display',Georgia,serif;color:#121936;margin:14px 0}
+.profile .v11-bio-copy h2{font:500 clamp(25px,2.6vw,36px)/1.25 'Playfair Display',Georgia,serif;color:#283454;margin:14px 0 22px}
+.profile .v11-bio-copy h3{font:500 29px/1.25 'Playfair Display',Georgia,serif;color:#162140;margin:37px 0 12px;border-top:1px solid #dedbd4;padding-top:20px}
+.profile .v11-bio-copy p{font-size:15px;line-height:1.85;color:#596374;margin:12px 0}
+.v11-bio-copy blockquote{background:#f4f1e9;border-left:4px solid #ba985c;padding:25px 30px;margin:25px 0;color:#17213e;font:500 24px/1.5 'Playfair Display',Georgia,serif}
+.v11-bio-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.v11-bio-columns>div{border:1px solid #e6e0d3;background:#fbfaf7;padding:20px}
+.v11-bio-columns h4{color:#192542;margin:0;font-size:17px}
+.v11-bio-contact{border-top:2px solid #b99457;padding-top:20px;margin-top:30px}
+.v11-bio-copy .v11-bio-contact a.cta{color:white!important}
+.v11-bio-copy .v11-bio-contact p a{font-weight:700;color:#85662c}
+@media(max-width:1050px){.v11-brookview-specs{grid-template-columns:repeat(3,minmax(0,1fr))}.v11-brookview-specs>div:nth-child(3){border-right:0}.v11-brookview-specs>div:nth-child(n+4){border-top:1px solid #ffffff30}}
+@media(max-width:750px){.v11-process-grid,.v11-bio-columns{grid-template-columns:1fr}.v11-process-card{padding:25px}.v11-process-goal{padding:28px}.v11-brookview-banner{padding:28px 21px}.v11-brookview-specs{grid-template-columns:repeat(2,minmax(0,1fr))}.v11-brookview-specs>div:nth-child(3){border-right:1px solid #ffffff30}.v11-brookview-specs>div:nth-child(even){border-right:0}.v11-brookview-specs>div:nth-child(n+3){border-top:1px solid #ffffff30}.v11-brookview-head h3{font-size:29px}.v11-editorial-photo,.intro-grid>.v11-editorial-photo{height:340px;min-height:340px}}
+.v11-brookview-description{font-size:14px!important;line-height:1.85;color:#e5e8f0!important;max-width:1020px;margin:0 0 23px!important}
